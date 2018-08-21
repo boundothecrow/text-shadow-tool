@@ -1,0 +1,25 @@
+@import 'normalize.css';
+@import 'inputs.css';
+@import 'settings.css';
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: row;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;    
+}
+
+#faux-jumbotron {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    padding: 6.25em;
+    background-size: cover;
+    color: white;
+}

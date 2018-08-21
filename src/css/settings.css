@@ -1,0 +1,7 @@
+.settings {
+    margin-top: 2em;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}

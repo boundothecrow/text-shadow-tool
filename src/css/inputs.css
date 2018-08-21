@@ -1,0 +1,30 @@
+input[type="text"] {
+    background: none;
+    border: none;
+    text-align: center;
+    color: white;
+    width: 20em;
+}
+
+#head { font-size: 2em; }
+
+#subheader { font-size: 1.25em; }
+
+#head, #subheader {
+    font-weight: bold;
+}
+
+::placeholder {
+    color: white;
+}
+
+textarea {
+    text-align: center;
+    width: 25em;
+    height: 5em;
+    resize: none;
+    border-radius: 10px;
+    outline: none;
+    padding-top: 2.5em;
+    font-family: monospace;
+}
