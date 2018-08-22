@@ -3,15 +3,26 @@
 @import 'settings.css';
 body {
     font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-flow: row;
 }
 
 #root {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column;
     width: 100vw;
     height: 100vh;    
+}
+
+.settings {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.setting-section {
+    display: flex;
+    flex-flow: column;
 }
 
 #faux-jumbotron {
@@ -20,6 +31,7 @@ body {
     flex-flow: column;
     align-items: center;
     padding: 6.25em;
+    background: url('../img/sample.jpg');
     background-size: cover;
     color: white;
 }

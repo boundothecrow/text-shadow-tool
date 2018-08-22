@@ -1,21 +1,14 @@
-input[type="text"] {
-    background: none;
-    border: none;
-    text-align: center;
-    color: white;
-    width: 20em;
+.edit-text {
+    margin-bottom: 1em;
 }
 
-#head { font-size: 2em; }
-
-#subheader { font-size: 1.25em; }
-
-#head, #subheader {
+#top, #bottom {
     font-weight: bold;
 }
 
 ::placeholder {
     color: white;
+    opacity: 1;
 }
 
 textarea {
@@ -27,4 +20,5 @@ textarea {
     outline: none;
     padding-top: 2.5em;
     font-family: monospace;
+    border: 1px solid grey;
 }
