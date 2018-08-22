@@ -407,12 +407,15 @@
     "yargs-parser": "^10.1.0"
   },
   "devDependencies": {
+    "compression-webpack-plugin": "^1.1.11",
     "css-loader": "^1.0.0",
     "eslint": "^5.4.0",
     "eslint-loader": "^2.1.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
+    "gh-pages": "^1.2.0",
     "images-webpack-loader": "^2.1.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.0",
     "postcss": "^7.0.2",
     "postcss-import": "^12.0.0",
     "postcss-loader": "^3.0.0",
