@@ -9,12 +9,18 @@ var inputBottom = document.querySelector('#bottomText');    // editing shadows
 // The header and subheader texts
 var topTxt = document.querySelector('#top');        // The top text
 var bottomTxt = document.querySelector('#bottom');  // and the bottom text
+// Color inputs
+var backgroundPicker = document.querySelector('#colorbackground');
+var textPicker = document.querySelector('#colortext');
+// The faux jumbotron
+var faux = document.querySelector('#faux-jumbotron');
+
 
 // Default values
 var topShadow = '0 3px 4px black, 0 6px 8px black';
 var bottomShadow = '0 1px 2px black, 0 2px 4px black';
 var textTop = 'This is a sample header';
-var textBottom = 'Bottom Text'
+var textBottom = 'Bottom Text';
 
 // Apply the shadows
 topTxt.style.textShadow = topShadow;
@@ -35,7 +41,6 @@ inputTop.addEventListener('keyup', (e) => {
     topTxt.style.textShadow = topShadow;
 
 });
-
 inputBottom.addEventListener('keyup', (e) => {
     bottomShadow = e.target.value;
     bottomTxt.style.textShadow = bottomShadow;
@@ -46,8 +51,17 @@ editTop.addEventListener('keyup', (e) => {
     textTop = e.target.value;
     topTxt.innerHTML = textTop;
 });
-
 editBottom.addEventListener('keyup', (e) => {
     textBottom = e.target.value;
     bottomTxt.innerHTML = textBottom;
+});
+
+// Color input
+backgroundPicker.addEventListener('change', (e) => {
+    faux.style.background = e.target.value;
+});
+
+textPicker.addEventListener('change', (e) => {
+    topTxt.style.color = e.target.value;
+    bottomTxt.style.color = e.target.value;
 });

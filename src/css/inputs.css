@@ -22,3 +22,12 @@ textarea {
     font-family: monospace;
     border: 1px solid grey;
 }
+
+input[type="color"] {
+    border: none;
+    background: none;
+    width: 4em;
+    height: 3em;
+    padding: none;
+    margin: 1em auto;
+}
